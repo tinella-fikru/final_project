@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,20 +21,20 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "user" || textBox2.Text == "user") )
+            
+            
             {
 
+
+
+                MainPage screen = new MainPage();
+                screen.Show();
+                this.Hide();
             }
-            else
-            {
-                MessageBox.Show(" Incorrect!!Try Again");
-            }
-            MainPage screen = new MainPage();
-            screen.Show();
-            this.Hide();
         }
 
-        private void signUpToolStripMenuItem_Click(object sender, EventArgs e)
+
+          private void signUpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (ActiveMdiChild != null)
             {
@@ -50,8 +51,7 @@ namespace FinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Class1 c1 = new Class1();
-            //MessageBox.Show("U r here");
+            System.Environment.Exit(0);
         }
     }
 }

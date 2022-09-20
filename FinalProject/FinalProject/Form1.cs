@@ -52,10 +52,11 @@ namespace FinalProject
             {
                 errorProvider1.SetError(txt_email, "Your Email is required");
             }
+            if (string.IsNullOrEmpty(txt_fn.Text))
+            {
+                errorProvider1.SetError(txt_fn, "Your Name is required");
+            }
 
-           
-
-            
             else if (!r.IsMatch(txt_fn.Text))
             {
                 errorProvider1.SetError(txt_fn, "Your Name should'nt contain numbers");
