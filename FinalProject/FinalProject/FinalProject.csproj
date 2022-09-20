@@ -117,8 +117,14 @@
     <Compile Include="venue.Designer.cs">
       <DependentUpon>venue.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="about_us.resx">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin login.resx">
       <DependentUpon>admin login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_us.resx">
+      <DependentUpon>contact_us.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

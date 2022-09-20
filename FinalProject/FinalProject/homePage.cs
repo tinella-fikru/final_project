@@ -37,13 +37,8 @@ namespace FinalProject
             if (ActiveMdiChild != null)
             {
                 ActiveMdiChild.Close();
-
-
             }
-
-
             Form1 form1 = new Form1();
-          //  form1.MdiParent = this;
             form1.Show();
         }
 
@@ -57,13 +52,8 @@ namespace FinalProject
             if(ActiveMdiChild != null)
             {
                 ActiveMdiChild.Close();
-
-
             }
-
-
             admin_login form1 = new admin_login();
-            //  form1.MdiParent = this;
             form1.Show();
         }
 
@@ -73,13 +63,8 @@ namespace FinalProject
             if (ActiveMdiChild != null)
             {
                 ActiveMdiChild.Close();
-
-
             }
-
-
-            contact_us form1 = new contact_us();
-            
+            contact_us form1 = new contact_us();           
             form1.Show();
         }
 
@@ -89,13 +74,8 @@ namespace FinalProject
             if (ActiveMdiChild != null)
             {
                 ActiveMdiChild.Close();
-
-
             }
-
-
             about_us form1 = new about_us();
-
             form1.Show();
         }
 
