@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button2 = new System.Windows.Forms.Button();
+            this.adminLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +52,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.signUpToolStripMenuItem,
             this.aboutUsToolStripMenuItem,
-            this.contactInfoToolStripMenuItem});
+            this.contactInfoToolStripMenuItem,
+            this.adminLoginToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
@@ -71,12 +73,14 @@
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.aboutUsToolStripMenuItem.Text = "About us";
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // contactInfoToolStripMenuItem
             // 
             this.contactInfoToolStripMenuItem.Name = "contactInfoToolStripMenuItem";
             this.contactInfoToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.contactInfoToolStripMenuItem.Text = "Contact info";
+            this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -143,6 +147,13 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // adminLoginToolStripMenuItem
+            // 
+            this.adminLoginToolStripMenuItem.Name = "adminLoginToolStripMenuItem";
+            this.adminLoginToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.adminLoginToolStripMenuItem.Text = "Admin login";
+            this.adminLoginToolStripMenuItem.Click += new System.EventHandler(this.adminLoginToolStripMenuItem_Click);
+            // 
             // homePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -183,5 +194,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem adminLoginToolStripMenuItem;
     }
 }

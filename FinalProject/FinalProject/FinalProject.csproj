@@ -65,6 +65,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about_us.Designer.cs">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin login.Designer.cs">
+      <DependentUpon>admin login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_page.Designer.cs">
+      <DependentUpon>admin_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_us.Designer.cs">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +117,9 @@
     <Compile Include="venue.Designer.cs">
       <DependentUpon>venue.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="admin login.resx">
+      <DependentUpon>admin login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

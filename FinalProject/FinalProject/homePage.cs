@@ -21,11 +21,9 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
-            {
 
 
+            { 
 
                 MainPage screen = new MainPage();
                 screen.Show();
@@ -53,5 +51,54 @@ namespace FinalProject
         {
             System.Environment.Exit(0);
         }
+
+        private void adminLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+
+
+            }
+
+
+            admin_login form1 = new admin_login();
+            //  form1.MdiParent = this;
+            form1.Show();
+        }
+
+        private void contactInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+
+
+            }
+
+
+            contact_us form1 = new contact_us();
+            
+            form1.Show();
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+
+
+            }
+
+
+            about_us form1 = new about_us();
+
+            form1.Show();
+        }
+
     }
 }
+

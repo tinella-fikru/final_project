@@ -44,3 +44,4 @@ C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debu
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.admin_login.resources
