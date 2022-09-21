@@ -107,6 +107,7 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\AdminClass.cs" />
     <Compile Include="model\Class1.cs" />
     <Compile Include="model\Class2.cs" />
     <Compile Include="Program.cs" />
@@ -122,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin login.resx">
       <DependentUpon>admin login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_page.resx">
+      <DependentUpon>admin_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="contact_us.resx">
       <DependentUpon>contact_us.cs</DependentUpon>

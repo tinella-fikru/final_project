@@ -69,11 +69,11 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(268, 6);
+            this.button1.Location = new System.Drawing.Point(1045, 654);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 50);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Venue";
+            this.button1.Text = "Custom";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -105,7 +105,7 @@
             this.view_Btn_1.Name = "view_Btn_1";
             this.view_Btn_1.Size = new System.Drawing.Size(212, 41);
             this.view_Btn_1.TabIndex = 4;
-            this.view_Btn_1.Text = "View Details";
+            this.view_Btn_1.Text = "Royal Package";
             this.view_Btn_1.UseVisualStyleBackColor = false;
             this.view_Btn_1.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -202,7 +202,7 @@
             this.view_btn_2.Name = "view_btn_2";
             this.view_btn_2.Size = new System.Drawing.Size(220, 40);
             this.view_btn_2.TabIndex = 13;
-            this.view_btn_2.Text = "View Details";
+            this.view_btn_2.Text = "Luxury Package";
             this.view_btn_2.UseVisualStyleBackColor = false;
             // 
             // view_btn_3
@@ -213,7 +213,6 @@
             this.view_btn_3.Name = "view_btn_3";
             this.view_btn_3.Size = new System.Drawing.Size(232, 42);
             this.view_btn_3.TabIndex = 14;
-            this.view_btn_3.Text = "View Details";
             this.view_btn_3.UseVisualStyleBackColor = false;
             // 
             // view_btn_4
@@ -235,7 +234,7 @@
             this.view_btn_5.Name = "view_btn_5";
             this.view_btn_5.Size = new System.Drawing.Size(253, 38);
             this.view_btn_5.TabIndex = 16;
-            this.view_btn_5.Text = "View Details";
+            this.view_btn_5.Text = "Simple Package";
             this.view_btn_5.UseVisualStyleBackColor = false;
             // 
             // MainPage
@@ -266,6 +265,7 @@
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainPage";
+            this.Load += new System.EventHandler(this.MainPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

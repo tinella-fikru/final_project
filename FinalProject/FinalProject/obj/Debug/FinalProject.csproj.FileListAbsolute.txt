@@ -47,3 +47,4 @@ C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debu
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.admin_login.resources
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.about_us.resources
 C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.contact_us.resources
+C:\Users\tinel\Documents\GitHub\final_project\FinalProject\FinalProject\obj\Debug\FinalProject.admin_page.resources
