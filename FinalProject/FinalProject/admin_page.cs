@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,8 @@ namespace FinalProject
         public admin_page()
         {
             InitializeComponent();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = AdminClass.GetAllProducts();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,9 +71,9 @@ namespace FinalProject
             {
                 string gen;
                 if (radioButton1.Checked)
-                    gen = radioButton1.ToString();
+                    gen = radioButton1.Text;
                 else
-                    gen = radioButton2.ToString();
+                    gen = radioButton2.Text;
 
                 try
                 {
@@ -79,7 +82,7 @@ namespace FinalProject
                         firstName = textBox2.Text,
                         lastName = textBox3.Text,
                         contactInfo = textBox4.Text,
-                        DateOfBirth = dateTimePicker1.Value,
+                        DateOfBirth = dateTimePicker1.Value.ToString(),
                         Email = textBox7.Text,
                         Occupation = textBox8.Text,
                         Gender = gen
@@ -87,10 +90,9 @@ namespace FinalProject
 
 
                     ac.save();
-
-                    Panel screen = new Panel();
-                    screen.Show();
-                    this.Hide();
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource=AdminClass.GetAllProducts();
+                    
 
                 }
                 catch (Exception)
@@ -107,7 +109,7 @@ namespace FinalProject
             var product = AdminClass.findOne(textBox9.Text);
             if (product == null)
             {
-                MessageBox.Show("Hi");
+                MessageBox.Show("Employee doesn't Exist");
             }
             else
             {
@@ -115,11 +117,30 @@ namespace FinalProject
                 textBox2.Text = product.firstName;
                 textBox3.Text = product.lastName;
                 textBox4.Text = product.contactInfo;
-                //textBox5.Text = product.DateOfBirth;
+                dateTimePicker1.Value = DateTime.Parse(product.DateOfBirth);
                 textBox7.Text = product.Email;
                 textBox8.Text = product.Occupation;
             }
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string gen;
+            if (radioButton1.Checked)
+                gen = radioButton1.Text;
+            else
+                gen = radioButton2.Text;
+            AdminClass.update(label9.Text, textBox2.Text, textBox3.Text, textBox4.Text,dateTimePicker1.Text, textBox7.Text, textBox8.Text,gen);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = AdminClass.GetAllProducts();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AdminClass.delete(label9.Text);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = AdminClass.GetAllProducts();
         }
     }
 }

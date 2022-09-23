@@ -19,7 +19,7 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="infinityadmin" && textBox2.Text == "987654321")
+            if (textBox1.Text=="" && textBox2.Text == "")
             {
                 admin_page screen = new admin_page();
                 screen.Show();
