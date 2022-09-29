@@ -72,7 +72,7 @@
             // 
             this.btn_bar.Location = new System.Drawing.Point(24, 137);
             this.btn_bar.Name = "btn_bar";
-            this.btn_bar.Size = new System.Drawing.Size(213, 23);
+            this.btn_bar.Size = new System.Drawing.Size(213, 25);
             this.btn_bar.TabIndex = 3;
             this.btn_bar.Text = "Bar services";
             this.btn_bar.UseVisualStyleBackColor = true;
