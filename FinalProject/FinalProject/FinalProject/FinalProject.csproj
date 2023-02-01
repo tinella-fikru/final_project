@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE735EE2-7CE6-418F-B13E-088AD990BB86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.6.0.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about_us.Designer.cs">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin login.Designer.cs">
+      <DependentUpon>admin login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminHomePage.Designer.cs">
+      <DependentUpon>adminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_page.Designer.cs">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_page.Designer.cs">
+      <DependentUpon>employee_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_us.Designer.cs">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fp.Designer.cs">
+      <DependentUpon>Fp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loggedIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loggedIn.Designer.cs">
+      <DependentUpon>loggedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\booking.cs" />
+    <Compile Include="resetpwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetpwd.Designer.cs">
+      <DependentUpon>resetpwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="revenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="revenue.Designer.cs">
+      <DependentUpon>revenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeOrders.Designer.cs">
+      <DependentUpon>SeeOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\beauty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\beauty.Designer.cs">
+      <DependentUpon>beauty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\catering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\catering.Designer.cs">
+      <DependentUpon>catering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\decor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\decor.Designer.cs">
+      <DependentUpon>decor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\dj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\dj.Designer.cs">
+      <DependentUpon>dj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\photography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\photography.Designer.cs">
+      <DependentUpon>photography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceForms\venue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceForms\venue.Designer.cs">
+      <DependentUpon>venue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signInfo.Designer.cs">
+      <DependentUpon>signInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\AdminClass.cs" />
+    <Compile Include="model\Class1.cs" />
+    <Compile Include="model\Class2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custom.Designer.cs">
+      <DependentUpon>custom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about_us.resx">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin login.resx">
+      <DependentUpon>admin login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminHomePage.resx">
+      <DependentUpon>adminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_page.resx">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_page.resx">
+      <DependentUpon>employee_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_us.resx">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fp.resx">
+      <DependentUpon>Fp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loggedIn.resx">
+      <DependentUpon>loggedIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetpwd.resx">
+      <DependentUpon>resetpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="revenue.resx">
+      <DependentUpon>revenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeOrders.resx">
+      <DependentUpon>SeeOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\beauty.resx">
+      <DependentUpon>beauty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\catering.resx">
+      <DependentUpon>catering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\decor.resx">
+      <DependentUpon>decor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\dj.resx">
+      <DependentUpon>dj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\photography.resx">
+      <DependentUpon>photography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceForms\venue.resx">
+      <DependentUpon>venue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signInfo.resx">
+      <DependentUpon>signInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom.resx">
+      <DependentUpon>custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="webfonts\fa-brands-400.eot" />
+    <None Include="webfonts\fa-brands-400.ttf" />
+    <None Include="webfonts\fa-brands-400.woff" />
+    <None Include="webfonts\fa-brands-400.woff2" />
+    <None Include="webfonts\fa-regular-400.eot" />
+    <None Include="webfonts\fa-regular-400.ttf" />
+    <None Include="webfonts\fa-regular-400.woff" />
+    <None Include="webfonts\fa-regular-400.woff2" />
+    <None Include="webfonts\fa-solid-900.eot" />
+    <None Include="webfonts\fa-solid-900.ttf" />
+    <None Include="webfonts\fa-solid-900.woff" />
+    <None Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\all.css" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <None Include="Resources\phone-504.png" />
+    <None Include="Resources\mail-2564.png" />
+    <None Include="Resources\login-password-119241.png" />
+    <None Include="Resources\share-arrow-855.png" />
+    <None Include="Resources\user-6769.png" />
+    <None Include="Resources\login-password-11924.png" />
+    <None Include="Resources\user-4254.png" />
+    <None Include="Resources\musical-notes-10190.png" />
+    <None Include="Resources\musical-notes-10190 %281%29.png" />
+    <None Include="Resources\location-2952.png" />
+    <None Include="Resources\fork-and-knife-12959.png" />
+    <None Include="Resources\dryer-1593.png" />
+    <None Include="Resources\camera-6734.png" />
+    <None Include="Resources\party-confetti-2994.png" />
+    <None Include="Resources\gift-box-and-hearts-11420.png" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
