@@ -79,6 +79,10 @@ namespace FinalProject
             form1.Show();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

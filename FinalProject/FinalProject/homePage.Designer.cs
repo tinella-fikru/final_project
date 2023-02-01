@@ -34,6 +34,7 @@
             this.signUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button2 = new System.Windows.Forms.Button();
-            this.adminLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,13 @@
             this.contactInfoToolStripMenuItem.Text = "Contact info";
             this.contactInfoToolStripMenuItem.Click += new System.EventHandler(this.contactInfoToolStripMenuItem_Click);
             // 
+            // adminLoginToolStripMenuItem
+            // 
+            this.adminLoginToolStripMenuItem.Name = "adminLoginToolStripMenuItem";
+            this.adminLoginToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.adminLoginToolStripMenuItem.Text = "Admin login";
+            this.adminLoginToolStripMenuItem.Click += new System.EventHandler(this.adminLoginToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -112,6 +119,7 @@
             this.textBox1.Size = new System.Drawing.Size(178, 27);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "@gmail.com";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -146,13 +154,6 @@
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // adminLoginToolStripMenuItem
-            // 
-            this.adminLoginToolStripMenuItem.Name = "adminLoginToolStripMenuItem";
-            this.adminLoginToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
-            this.adminLoginToolStripMenuItem.Text = "Admin login";
-            this.adminLoginToolStripMenuItem.Click += new System.EventHandler(this.adminLoginToolStripMenuItem_Click);
             // 
             // homePage
             // 
